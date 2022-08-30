@@ -42,7 +42,6 @@ main {
     width: 700px;
     max-width: 80%;
     display: flex;
-    background-color: red;
     gap: 2rem;
 }
 
