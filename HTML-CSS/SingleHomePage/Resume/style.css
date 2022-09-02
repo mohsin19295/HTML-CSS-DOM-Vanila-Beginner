@@ -9,17 +9,29 @@ main{
     height: 100vh;
     width: 90%;
     max-width: 600px;
-    background-color: red;
     display: flex;
     gap: 1rem;
-    padding: 0.5rem;
-    border: 1px solid black;
+    border: 1px solid #0003;
 }
 
 
 main > *{
     width: 50%;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.1rem 0.5rem;
+}
+
+/* Common in Both Aside */
+
+.img-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    max-width: 120px;
 }
 
 p, span{
@@ -27,40 +39,55 @@ p, span{
     font-weight: 400;
 }
 
-
-.left-aside{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-}
-
-.left-aside img{
-    max-width: 120px;
-}
-
-.left-aside .info-section{
+.info-section {
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
 }
 
-.left-aside .child-section{
+.child-section {
     display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.3rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
 }
 
-.left-aside .child-section > div:not(){
-    display: flex;
-        flex-direction: column;
-        gap: 0.1rem;
+ .heading-div {
+     display: flex;
+     gap: 0.5rem;
+     align-items: center;
+ }
+
+ .left-aside{
+    background-color: rgba(128, 128, 128, 0.068);
+ }
+/* Right Aside Header */
+
+.header h1{
+    font-size: 1.8rem;
+}
+
+.header p{
+    font-size: 1.3rem;
 }
 
 
-.left-aside .heading-div{
+.line-with-icon{
     display:flex;
-    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.line-with-icon>div {
+    width: 100px;
+    border-top: 2px solid black
+}
+
+.header-name{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
