@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS</title>
+    <style>
+        button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button id="span-table">Span Table</button>
+        <button id="instamojo">Instamojo Page</button>
+        <button id="masai-home-page">Masai Home Page</button>
+        <button id="ndtv">NDTV page</button>
+        <button id="resume">Resume</button>
+        <button id="slack-culture">Slack Culture Page</button>
+        <button id="unix">Unix Page</button>
+        <button id="yummly">Yummly Page</button>
+        <button id="sorting-table">Sorting Table</button>
+    </div>
+</body>
+</html>
+
+<script>
+    const spanTable = document.getElementById('span-table');
+    const instamojo = document.getElementById('instamojo');
+    const masaiHomePage = document.getElementById('masai-home-page');
+    const ndtv = document.getElementById('ndtv');
+    const resume = document.getElementById('resume');
+    const slackCulture = document.getElementById('slack-culture');
+    const unix = document.getElementById('unix');
+    const yummly = document.getElementById('yummly');
+    const sortingTable = document.getElementById('sorting-table');
+
+    spanTable.addEventListener('click', ()=>{
+        window.open("./Table/Span-Table", '_blank');
+    })
+    instamojo.addEventListener('click', ()=>{
+        window.open("./SinglePage/Instamojo-Pricing", '_blank');
+    })
+    masaiHomePage.addEventListener('click', ()=>{
+        window.open("./SinglePage/Masai-Page", '_blank');
+    })
+    ndtv.addEventListener('click', ()=>{
+        window.open("./SinglePage/NDTV", '_blank');
+    })
+    resume.addEventListener('click', ()=>{
+        window.open("./SinglePage/Resume", '_blank');
+    })
+    slackCulture.addEventListener('click', ()=>{
+        window.open("./SinglePage/Slack-Culture", '_blank');
+    })
+    unix.addEventListener('click', ()=>{
+        window.open("./SinglePage/Unix", '_blank');
+    })
+    yummly.addEventListener('click', ()=>{
+        window.open("./SinglePage/Yummly", '_blank');
+    })
+    sortingTable.addEventListener('click', ()=>{
+        window.open("./Table/Table-With-Sorting", '_blank');
+    })
+</script>
